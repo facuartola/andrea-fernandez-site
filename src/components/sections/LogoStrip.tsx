@@ -1,9 +1,9 @@
 import { useI18n } from "@/i18n/I18nProvider";
 
 const brands = [
-  "Boca Juniors", "Racing Club", "Sol de Am\xE9rica", "Monarcas Morelia",
-  "Club Quer\xE9taro", "Ronaldinho", "Paulo Dybala", "Rodrigo De Paul",
-  "Nissan", "McDonald\u2019s", "Coca-Cola",
+  "Boca Juniors", "Racing Club", "Sol de América", "Monarcas Morelia",
+  "Club Querétaro", "Ronaldinho", "Paulo Dybala", "Rodrigo De Paul",
+  "Nissan", "McDonald's", "Coca-Cola",
 ];
 
 export const LogoStrip = () => {
