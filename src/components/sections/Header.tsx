@@ -29,7 +29,7 @@ export const Header = ({ headerRef }: HeaderProps) => {
     >
       <div className="mx-auto w-[min(calc(100%-40px),1200px)] flex items-center justify-between min-h-[80px] gap-5">
         <a href="#inicio" className="font-display text-2xl font-bold text-navy leading-none">
-          Andrea Fern\xE1ndez
+          Andrea Fernández
           <em className="not-italic block font-sans text-[0.62rem] font-semibold tracking-[0.3em] uppercase text-gold mt-0.5">
             {t("brand.subtitle")}
           </em>
