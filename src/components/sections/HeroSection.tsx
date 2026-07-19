@@ -47,7 +47,7 @@ export const HeroSection = ({ ornamentRef }: HeroSectionProps) => {
         <div className="reveal relative">
           <div className="premium-frame group aspect-[4/5] max-w-[460px] mx-auto">
             <div className="absolute inset-0 z-[1] h-1.5 bg-gradient-gold" />
-            <img src={portrait} alt="Andrea Fern\xE1ndez" className="img-cover" style={{ objectPosition: "center 30%" }} loading="eager" />
+            <img src={portrait} alt="Andrea Fernández" className="img-cover" style={{ objectPosition: "center 30%" }} loading="eager" />
           </div>
           <div className="relative -mt-10 mx-4 md:mx-8 bg-gradient-navy rounded-2xl p-7 md:p-8 text-primary-foreground shadow-luxe overflow-hidden">
             <span aria-hidden className="absolute -top-3 left-5 font-display text-[7rem] leading-none text-white/[0.07] select-none">&ldquo;</span>
