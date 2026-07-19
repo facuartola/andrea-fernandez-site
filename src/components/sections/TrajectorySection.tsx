@@ -25,7 +25,7 @@ export const TrajectorySection = () => {
         </figure>
         <figure className="reveal reveal-delay-1 md:col-span-5 group lift">
           <div className="premium-frame aspect-[4/5] md:aspect-[4/5]">
-            <img src={ronaldinho1} alt="Sesi\xF3n de coaching con Ronaldinho" className="img-cover" style={{ objectPosition: "center 35%" }} loading="lazy" />
+            <img src={ronaldinho1} alt="Sesión de coaching con Ronaldinho" className="img-cover" style={{ objectPosition: "center 35%" }} loading="lazy" />
           </div>
           <figcaption className="mt-4 px-1">
             <p className="font-display text-lg text-navy font-bold">{t("tr.fig2.t")}</p>
@@ -37,7 +37,7 @@ export const TrajectorySection = () => {
       <div className="grid md:grid-cols-3 gap-5 md:gap-6">
         <figure className="reveal group lift">
           <div className="premium-frame aspect-[4/5]">
-            <img src={ronaldinho2} alt="Andrea con Ronaldinho \u2014 Quer\xE9taro" className="img-cover" style={{ objectPosition: "center 20%" }} loading="lazy" />
+            <img src={ronaldinho2} alt="Andrea con Ronaldinho — Querétaro" className="img-cover" style={{ objectPosition: "center 20%" }} loading="lazy" />
           </div>
           <figcaption className="mt-4 px-1">
             <p className="font-display text-lg text-navy font-bold">{t("tr.fig3.t")}</p>
@@ -46,7 +46,7 @@ export const TrajectorySection = () => {
         </figure>
         <figure className="reveal reveal-delay-1 group lift">
           <div className="premium-frame aspect-[4/5]">
-            <img src={bbva} alt="BBVA Liga Bancomer \u2014 M\xE9xico" className="img-cover" style={{ objectPosition: "center 25%" }} loading="lazy" />
+            <img src={bbva} alt="BBVA Liga Bancomer — México" className="img-cover" style={{ objectPosition: "center 25%" }} loading="lazy" />
           </div>
           <figcaption className="mt-4 px-1">
             <p className="font-display text-lg text-navy font-bold">{t("tr.fig4.t")}</p>
@@ -64,22 +64,22 @@ export const TrajectorySection = () => {
                 <p className="font-display italic text-lg">{t("tr.media.ole.t")}</p>
                 <p className="text-xs text-white/70">{t("tr.media.ole.d")}</p>
               </span>
-              <span className="text-gold-light group-hover/link:translate-x-1 transition-transform">\u2192</span>
+              <span className="text-gold-light group-hover/link:translate-x-1 transition-transform">→</span>
             </a>
             <a href="#" onClick={(e) => { e.preventDefault(); alert("Enlace pronto disponible"); }} className="group/link flex items-center justify-between gap-3 border-t border-white/15 pt-4 hover:text-gold-light transition-colors">
               <span>
                 <p className="font-display italic text-lg">{t("tr.media.marca.t")}</p>
                 <p className="text-xs text-white/70">{t("tr.media.marca.d")}</p>
               </span>
-              <span className="text-gold-light group-hover/link:translate-x-1 transition-transform">\u2192</span>
+              <span className="text-gold-light group-hover/link:translate-x-1 transition-transform">→</span>
             </a>
           </div>
         </article>
       </div>
 
       <div className="grid md:grid-cols-3 gap-5 mt-16">
-        {[["tr.auth1.t",["Club Atl\xE9tico Boca Juniors","Racing Club de Avellaneda","Club Sol de Am\xE9rica","Monarcas Morelia","Club Quer\xE9taro","Ronaldinho, Rodrigo De Paul, Paulo Dybala"]],
-          ["tr.auth2.t",["Nissan","McDonald\u2019s","Coca-Cola","tr.auth2.i1","tr.auth2.i2"]],
+        {[["tr.auth1.t",["Club Atlético Boca Juniors","Racing Club de Avellaneda","Club Sol de América","Monarcas Morelia","Club Querétaro","Ronaldinho, Rodrigo De Paul, Paulo Dybala"]],
+          ["tr.auth2.t",["Nissan","McDonald's","Coca-Cola","tr.auth2.i1","tr.auth2.i2"]],
           ["tr.auth3.t",["tr.auth3.i1","tr.auth3.i2","tr.auth3.i3","tr.auth3.i4","tr.auth3.i5"]]
         ].map(([titleK, items]: [string, string[]]) => (
           <article key={titleK} className="reveal bg-card rounded-2xl p-8 border border-border shadow-soft lift">
@@ -88,7 +88,7 @@ export const TrajectorySection = () => {
             <ul className="flex flex-col gap-2 text-[0.92rem] text-muted-foreground">
               {items.map((it) => (
                 <li key={it} className="flex gap-2.5">
-                  <span className="text-gold mt-2 flex-shrink-0">\xB7</span>
+                  <span className="text-gold mt-2 flex-shrink-0">·</span>
                   <span>{it.startsWith("tr.") ? t(it as any) : it}</span>
                 </li>
               ))}
