@@ -8,7 +8,7 @@ export const FooterSection = () => {
         <div className="grid md:grid-cols-2 gap-10 mb-12">
           <div>
             <div className="font-display text-2xl font-bold text-navy">
-              Andrea Fern\xE1ndez
+              Andrea Fernández
               <em className="not-italic block font-sans text-[0.62rem] font-semibold tracking-[0.3em] uppercase text-gold mt-0.5">{t("brand.subtitle")}</em>
             </div>
             <p className="text-muted-foreground mt-4 leading-relaxed font-light max-w-md">{t("footer.tagline")}</p>
