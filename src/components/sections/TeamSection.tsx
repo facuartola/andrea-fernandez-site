@@ -4,8 +4,8 @@ import { useI18n } from "@/i18n/I18nProvider";
 
 const teamMembers = [
   "Viviana Adamo", "Javier Sotelo", "Oscar Corona", "David Vila",
-  "Luis Rocco", "Roxana Saal", "Sabrina Fern\xE1ndez", "Gabriela Trotta",
-  "Claudio B\xF3rtoli", "Fernando Frank", "Laura Frutos",
+  "Luis Rocco", "Roxana Saal", "Sabrina Fernández", "Gabriela Trotta",
+  "Claudio Bórtoli", "Fernando Frank", "Laura Frutos",
 ];
 
 export const TeamSection = () => {
