@@ -1,5 +1,8 @@
+import { useState } from "react";
 import { LanguageToggle } from "@/components/LanguageToggle";
 import { useI18n } from "@/i18n/I18nProvider";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Menu } from "lucide-react";
 
 interface HeaderProps {
   headerRef: React.RefObject<HTMLElement | null>;
@@ -17,6 +20,7 @@ const navMap: Record<string, string> = {
 
 export const Header = ({ headerRef }: HeaderProps) => {
   const { t } = useI18n();
+  const [open, setOpen] = useState(false);
 
   return (
     <header
@@ -30,6 +34,8 @@ export const Header = ({ headerRef }: HeaderProps) => {
             {t("brand.subtitle")}
           </em>
         </a>
+
+        {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-1">
           {navItems.map((key) => (
             <a
@@ -48,8 +54,41 @@ export const Header = ({ headerRef }: HeaderProps) => {
           </a>
           <div className="ml-3"><LanguageToggle /></div>
         </nav>
-        <div className="lg:hidden flex items-center gap-3">
+
+        {/* Mobile: hamburger + lang toggle */}
+        <div className="lg:hidden flex items-center gap-2">
           <LanguageToggle />
+          <Sheet open={open} onOpenChange={setOpen}>
+            <SheetTrigger asChild>
+              <button
+                aria-label="Abrir men\xFA"
+                className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-navy/5 transition-colors"
+              >
+                <Menu className="w-5 h-5 text-navy" />
+              </button>
+            </SheetTrigger>
+            <SheetContent side="right" className="bg-ivory border-l border-border pt-16 w-72">
+              <nav className="flex flex-col gap-2">
+                {navItems.map((key) => (
+                  <a
+                    key={key}
+                    href={`#${navMap[key]}`}
+                    onClick={() => setOpen(false)}
+                    className="text-base font-medium text-muted-foreground px-4 py-3 rounded-xl hover:text-navy hover:bg-navy/5 transition-colors"
+                  >
+                    {t(`nav.${key}`)}
+                  </a>
+                ))}
+                <a
+                  href="#contacto"
+                  onClick={() => setOpen(false)}
+                  className="mt-2 bg-navy text-primary-foreground text-sm font-semibold px-5 py-3 rounded-full hover:bg-navy-mid transition-colors text-center"
+                >
+                  {t("nav.contact")}
+                </a>
+              </nav>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </header>
