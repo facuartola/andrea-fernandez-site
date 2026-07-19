@@ -10,7 +10,7 @@ export const AboutSection = () => {
       <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-12 lg:gap-20 items-center">
         <div className="reveal relative order-2 lg:order-1">
           <div className="premium-frame group aspect-[4/5] max-w-[440px] mx-auto">
-            <img src={morelia} alt="Andrea Fern\xE1ndez \u2014 Monarcas Morelia" className="img-cover" style={{ objectPosition: "center 25%" }} loading="lazy" />
+            <img src={morelia} alt="Andrea Fernández — Monarcas Morelia" className="img-cover" style={{ objectPosition: "center 25%" }} loading="lazy" />
           </div>
           <div className="hidden md:block absolute -bottom-6 -left-6 w-32 h-32 border-l-2 border-b-2 border-gold/60 rounded-bl-2xl pointer-events-none" />
           <div className="hidden md:block absolute -top-6 -right-6 w-32 h-32 border-r-2 border-t-2 border-gold/60 rounded-tr-2xl pointer-events-none" />
