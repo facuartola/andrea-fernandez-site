@@ -61,7 +61,7 @@ export const Header = ({ headerRef }: HeaderProps) => {
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
               <button
-                aria-label="Abrir men\xFA"
+                aria-label="Abrir menú"
                 className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-navy/5 transition-colors"
               >
                 <Menu className="w-5 h-5 text-navy" />
