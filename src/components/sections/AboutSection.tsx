@@ -26,7 +26,7 @@ export const AboutSection = () => {
             <p className="reveal text-muted-foreground leading-relaxed font-light">{t("about.p3")}</p>
           </div>
           <div className="reveal flex flex-wrap gap-2.5 mt-7">
-            {["Coach PCC \xB7 ICF", "Newfield Network", "Tim Gallwey \xB7 LATAM", "Master Coach"].map((t) => (
+            {["Coach PCC · ICF", "Newfield Network", "Tim Gallwey · LATAM", "Master Coach"].map((t) => (
               <span key={t} className="px-4 py-1.5 rounded-full bg-gold-pale text-gold border border-gold/30 text-[0.78rem] font-semibold tracking-wide">{t}</span>
             ))}
           </div>
